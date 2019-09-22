@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "Arial";
+    src: url("assets/fonts/ArialRegular.eot");
+    src: url("assets/fonts/ArialRegular.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/ArialRegular.woff") format("woff"),
+        url("assets/fonts/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Asap";
+    src: url("assets/fonts/Asap-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Sergeo WP";
+    src: url("assets/fonts/segoe-wp-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Sergeo UI";
+    src: url("assets/fonts/segoeui.ttf") format("truetype");
+}
+
 .wrapper {
     width: 1300px;
     margin: 0 auto;
