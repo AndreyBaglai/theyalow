@@ -14,12 +14,12 @@
 }
 
 @font-face {
-    font-family: "Sergeo WP";
+    font-family: "Segoe WP";
     src: url("assets/fonts/segoe-wp-light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Sergeo UI";
+    font-family: "Segoe UI";
     src: url("assets/fonts/segoeui.ttf") format("truetype");
 }
 
@@ -28,20 +28,24 @@
     margin: 0 auto;
 }
 
-header {
+.inner-content {
+    padding: 0 140px;
+}
+
+.header-wrapper {
     height: 570px;
     background: url("./assets/img/header-bg.png");
-    padding: 0 140px;
     position: relative;
 }
 
-.header-top {
+.header {
     display: flex;
     justify-content: space-between;
 }
 
 .header-logo {
     margin-top: 33px;
+    height: 87px;
 }
 
 .navbar ul {
@@ -150,4 +154,60 @@ h1>span {
     border-right: 4px solid #fff;
     border-bottom: 4px solid #fff;
     transform: rotate(-45deg);
+}
+
+.icons-wrapper {
+    display: flex;
+}
+
+.icon-item {
+    flex: 1;
+    border-right: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+}
+
+.left-icon {
+    border-left: 2px solid #d4d4d4;
+}
+
+.right-icon {
+    border-right: 2px solid #d4d4d4;
+}
+
+.cloud {
+    display: block;
+    width: 109px;
+    height: 74px;
+    margin: 65px auto 0;
+}
+
+.leaf {
+    display: block;
+    width: 91px;
+    height: 95px;
+    margin: 38px auto 0;
+}
+
+.airplane {
+    display: block;
+    width: 81px;
+    height: 83px;
+    margin: 58px auto 0;
+}
+
+.icon-item>p {
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 23px;
+    margin-bottom: 35px;
+}
+
+.yellow-section {
+    height: 511px;
+    background: url("./assets/img/bg-section.png");
 }
