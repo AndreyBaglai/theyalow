@@ -227,6 +227,89 @@ h1>span {
     display: flex;
 }
 
+.column-item {
+    flex: 1;
+    position: relative;
+}
+
+.text-column {
+    background: #ec9e03;
+}
+
+.text-column>p {
+    margin: 0;
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    text-align: left;
+    padding: 30px;
+}
+
+.twitter {
+    background: #ec9e03;
+}
+
+.twitter>img {
+    display: block;
+    margin: 58px auto;
+}
+
+.plus {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Segoe WP";
+}
+
+.number {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+.date {
+    width: 108px;
+    height: 78px;
+    background: #ddb101;
+    opacity: 0.8;
+}
+
+.date-number {
+    padding-top: 5px;
+    display: block;
+    text-align: center;
+    font-size: 46px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+.date-month {
+    display: block;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .grey-section {
     height: 495px;
     background: url("./assets/img/grey-bg.png");
