@@ -394,7 +394,7 @@ h1>span {
     font-family: "PT Sans";
     font-weight: 400;
     text-transform: uppercase;
-    padding: 48px 0 56px 0;
+    padding: 35px 0 56px 0;
     text-align: center;
 }
 
@@ -402,6 +402,8 @@ h1>span {
     display: inline-block;
     height: 252px;
     width: 325px;
+    position: relative;
+    left: 14px;
 }
 
 .tablet {
@@ -409,20 +411,27 @@ h1>span {
     margin: 0 25px;
     height: 170px;
     width: 132px;
+    position: relative;
+    left: 10px;
+    top: -43px;
 }
 
 .mobile {
     display: inline-block;
     height: 62px;
     width: 39px;
+    position: relative;
+    left: 2px;
+    top: -43px;
 }
 
 .list {
     display: inline-block;
-    list-style-image: url("./assets/img/yellow-circle.svg");
-    margin-left: 90px;
-    position: relative;
+    list-style-image: url(./assets/img/yellow-circle.svg);
+    margin-left: 103px;
+    position: absolute;
     padding-left: 0;
+    top: 167px;
 }
 
 .list>li {
@@ -433,8 +442,13 @@ h1>span {
     height: 45px;
     font-family: "Open Sans";
     font-weight: 400;
-    margin-bottom: 18px;
-    padding-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 14px;
+}
+
+.list>li:nth-child(2) {
+    position: relative;
+    bottom: 8px;
 }
 
 .free {
@@ -443,29 +457,30 @@ h1>span {
     height: 114px;
     background: #f5c506;
     border-radius: 50%;
-    top: 110px;
-    left: 121px;
+    top: 91px;
+    left: 136px;
+    z-index: 1;
 }
 
 .free>p {
     text-transform: uppercase;
-    font-size: 19px;
-    letter-spacing: 0px;
+    font-size: 17px;
+    letter-spacing: 1px;
     color: #ffffff;
     font-family: "PT Sans Narrow";
     font-weight: 700;
     margin: 0;
     position: relative;
-    top: 45px;
+    top: 50px;
     left: 7px;
 }
 
 footer {
     background: #4c4c4c;
-    box-shadow: -1px -10px 8px -4px rgba(0, 0, 0, 0.7);
+    box-shadow: -1px -10px 6px -7px rgba(0, 0, 0, 0.7);
     height: 65px;
 }
 
 .logo-footer {
-    margin-top: 4px;
+    margin-top: 5px;
 }
