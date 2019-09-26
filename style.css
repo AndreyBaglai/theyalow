@@ -24,6 +24,10 @@
     width: 318px;
 }
 
+.mobile-navbar {
+    display: none;
+}
+
 .navbar ul {
     display: flex;
     list-style: none;
@@ -378,6 +382,10 @@ h1>span {
     margin: 6px auto;
 }
 
+.twitter-section {
+    display: none;
+}
+
 .input-range {
     display: block;
     -webkit-appearance: none;
@@ -509,4 +517,222 @@ footer {
     margin-top: 5px;
 }
 
-@media screen and (max-width: 640px) {}
+@media screen and (max-width: 640px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .inner-content {
+        padding: 0;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .navbar,
+    .header-logo,
+    h1,
+    .left-arrow,
+    .right-arrow,
+    .list,
+    .yellow-section h2,
+    .twitter,
+    .date,
+    .input-range {
+        display: none;
+    }
+
+    .header-wrapper {
+        background-image: none;
+        height: 100%;
+        ;
+    }
+
+    .header-content {
+        margin: 0;
+    }
+
+    .logo-item {
+        height: 36px;
+        width: 151px;
+        position: relative;
+        bottom: 8px;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    .mobile-navbar ul {
+        padding-left: 0;
+        display: flex;
+        height: 60px;
+        margin: 0;
+    }
+
+    .mobile-navbar li {
+        flex: 1;
+        display: inline-block;
+        text-transform: uppercase;
+        background: #f5c505;
+        border-right: 1px solid #a18208;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .mobile-navbar li:nth-child(1) {
+        background: #3e3e3c;
+    }
+
+    .img-about {
+        margin-left: 5px;
+    }
+
+    .mobile-navbar li a {
+        text-decoration: none;
+        font-size: 19px;
+        letter-spacing: 0px;
+        color: #9b7d08;
+        font-family: "Segoe WP";
+        text-align: center;
+        position: relative;
+        bottom: 3px;
+        margin-right: 1px;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .video-wrapper::before {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .video-wrapper>video {
+        object-fit: cover;
+        width: 100%;
+        height: 325px;
+    }
+
+    .icon-item {
+        height: 171px;
+        border: none;
+    }
+
+    .yellow-section {
+        height: 100%;
+        background: #fff;
+    }
+
+    .column-item {
+        margin: 16px 3px 16px 6px;
+    }
+
+    .twitter-section {
+        display: flex;
+        height: 228px;
+        background: #f5c507;
+    }
+
+    .twitter-item {
+        flex: 1;
+    }
+
+    .twitter-item>img {
+        display: block;
+        width: 155px;
+        height: 132px;
+        margin: 48px auto;
+    }
+
+    .twitter-item ul {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .twitter-item ul li {
+        width: 281px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .twitter-item ul li:nth-child(1) {
+        background: url('./assets/img/message-1.png');
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .twitter-item ul li:nth-child(2) {
+        background: url('./assets/img/message-2.png');
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .twitter-item ul li:nth-child(3) {
+        background: url('./assets/img/message-3.png');
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .grey-section h2 {
+        padding-top: 40px;
+    }
+
+    .text-message {
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: #8f8e8e;
+        font-family: "Arial";
+        position: relative;
+        left: 30px;
+        top: 8px;
+    }
+
+    .author {
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: #8f8e8e;
+        font-family: "Arial";
+        position: relative;
+        left: 30px;
+        bottom: 5px;
+        margin: 0;
+    }
+
+    form {
+        position: relative;
+    }
+
+    #tweet-text {
+        width: 260px;
+        height: 29px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        position: relative;
+        left: 10px;
+        padding-left: 10px;
+    }
+
+    #btn-tweet {
+        background-image: linear-gradient(0deg, #d18f0d 0%, #e7a623 100%);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 33px;
+        width: 65px;
+        position: absolute;
+        right: 37px;
+        top: 0;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: "Arial";
+        border: none;
+    }
+
+    .monitor {}
+}
