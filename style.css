@@ -167,6 +167,10 @@ h1>span {
     opacity: 0.7;
 }
 
+.navbar ul li:hover a {
+    color: #000;
+}
+
 .right-arrow>span {
     position: absolute;
     top: 21px;
@@ -409,6 +413,14 @@ h1>span {
     border-radius: 15px;
 }
 
+.input-range::-moz-range-thumb {
+    width: 192px;
+    height: 16px;
+    cursor: pointer;
+    background: #ec9e03;
+    border-radius: 15px;
+}
+
 .grey-section {
     background: url('./assets/img/grey-bg.png');
     height: 498px;
@@ -581,6 +593,14 @@ footer {
         cursor: pointer;
         text-align: center;
         padding-top: 20px;
+    }
+
+    .mobile-navbar li:hover {
+        background-image: linear-gradient(0deg, #282826 0%, #40403e 100%);
+    }
+
+    .mobile-navbar li:hover a {
+        color: #fff;
     }
 
     .mobile-navbar li:nth-child(1) {
