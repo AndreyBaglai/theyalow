@@ -517,7 +517,7 @@ footer {
     margin-top: 5px;
 }
 
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
     .wrapper {
         width: 100%;
         margin: 0;
@@ -584,11 +584,20 @@ footer {
     }
 
     .mobile-navbar li:nth-child(1) {
-        background: #3e3e3c;
+        background-image: linear-gradient(0deg, #282826 0%, #40403e 100%);
+        min-width: 185px;
+    }
+
+    .mobile-navbar li:nth-child(2) {
+        min-width: 172px;
+    }
+
+    .mobile-navbar li:nth-child(3) {
+        min-width: 128px;
     }
 
     .img-about {
-        margin-left: 5px;
+        margin-left: 15px;
     }
 
     .mobile-navbar li a {
@@ -631,13 +640,58 @@ footer {
         background: #fff;
     }
 
+    .icons-wrapper {
+        height: 166px;
+    }
+
     .column-item {
-        margin: 16px 3px 16px 6px;
+        margin: 16px 3px 6px 6px;
+    }
+
+    .cloud {
+        display: block;
+        width: 90px;
+        height: 74px;
+        margin: 27px 0 0 39px;
+    }
+
+    .cloud+p {
+        font-size: 23px;
+        margin-bottom: 35px;
+        margin-left: -29px;
+    }
+
+    .leaf {
+        width: 63px;
+        height: 95px;
+        margin: 17px auto 0;
+    }
+
+    .leaf+p {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    .airplane {
+        width: 55px;
+        height: 83px;
+        top: -38px;
+    }
+
+    .airplane+p {
+        font-size: 23px;
+        margin-top: -22px;
+        margin-bottom: 7px;
+        margin-left: 5px;
+    }
+
+    .text-column>p {
+        line-height: 31px;
     }
 
     .twitter-section {
         display: flex;
-        height: 228px;
+        height: 233px;
         background: #f5c507;
     }
 
@@ -647,13 +701,14 @@ footer {
 
     .twitter-item>img {
         display: block;
-        width: 155px;
-        height: 132px;
-        margin: 48px auto;
+        width: 169px;
+        height: 147px;
+        margin: 55px auto;
     }
 
     .twitter-item ul {
-        padding-left: 0;
+        padding-left: 8px;
+        padding-top: 1px;
         list-style: none;
     }
 
@@ -676,6 +731,10 @@ footer {
     .twitter-item ul li:nth-child(3) {
         background: url('./assets/img/message-3.png');
         background-repeat: no-repeat no-repeat;
+    }
+
+    .grey-section {
+        height: 471px;
     }
 
     .grey-section h2 {
@@ -705,6 +764,7 @@ footer {
 
     form {
         position: relative;
+        left: 8px;
     }
 
     #tweet-text {
@@ -725,7 +785,7 @@ footer {
         height: 33px;
         width: 65px;
         position: absolute;
-        right: 37px;
+        right: 32px;
         top: 0;
         font-size: 15px;
         letter-spacing: 0px;
@@ -734,5 +794,33 @@ footer {
         border: none;
     }
 
-    .monitor {}
+    .free {
+        top: 123px;
+        left: 32px;
+    }
+
+    .monitor {
+        left: 63px;
+        top: 20px;
+    }
+
+    .tablet {
+        left: 50px;
+        top: -21px;
+    }
+
+    .mobile {
+        left: 46px;
+        top: -24px;
+    }
+
+    footer {
+        height: 39px;
+    }
+
+    .logo-footer {
+        width: 132px;
+        height: 32px;
+        margin: 7px 0 56px 77px;
+    }
 }
